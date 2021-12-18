@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Checkout.css">
+    <title>Check out</title>
+</head>
+<body>
+    <header>
+        <img src="../Public/Nordstrom_Logo_2019.png" alt="">
+        <div><i class="fas fa-shopping-bag"></i></div>
+    </header>
+    <main>
+        <hr>
+        <div id="main_div">
+
+        
+        <div id="address_div">
+            
+            <div id="address_upper_div">
+                <div>
+                    <div>
+                        <span><i class="fas fa-lock"></i> Secure Checkput</span>
+                        <span>powered by Borderfree </span>
+
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">English</option>
+                            <option value="">Chinese</option>
+                            <option value="">French</option>
+                            <option value="">German</option>
+                            <option value="">Indonesian</option>
+                            <option value="">Italian</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>Already Have a Borderfree account? Click</div>
+                    <div>here</div>
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <hr>
+            </div>
+
+            <div id="address_form">
+                <div>
+                    <div>1</div>
+                    <p>Delivery</p>
+                </div>
+                <form action="">
+                    <input type="text" name="Email" placeholder="Email" id="email">
+                    <div>
+                        <input type="text" name="First Name" placeholder="First Name" id="first_name">
+                        <input type="text" name="Last Name" placeholder="Last Name" id="last_name">
+                    </div>
+                    <input type="text" name="Address" placeholder="Address" id="address">
+                    <div>
+                        <input type="text" Name="Address 2" placeholder="Address 2 (Optional)">
+                        <input type="text" name="Postal Code" placeholder="Postal Code" id="postal_code">
+                    </div>
+                    <div>
+                        <input type="text" name="City" placeholder="City" id="city">
+                        <input type="text" name="Regional" placeholder="Regional(Optional)">
+                    </div>
+                    <div>
+                        <input type="number" name="Phone" placeholder="Phone" id="number">
+                        <select name="Location" id="countery">
+                            <option value="">India</option>
+                            <option value="">USA</option>
+                            <option value="">England</option>
+                            <option value="">Bangladesh</option>
+                            <option value="">Australia</option>
+                            <option value="">Newzland</option>
+                            <option value="">Africa</option>
+                        </select>
+                    </div>
+                    
+                </form>
+                <div>
+                    <button onclick="goTopayment()" id="continue_btn">Continue</button>
+                </div>
+                
+
+            </div>
+                <!-- Payment -->
+            <div id="Payment">
+                <div id="delivery_address_div">
+                    <div>1</div>
+                    <p>Delivery</p>
+                    <p onclick="editAddress()">(Change)</p>
+                </div>
+
+                <div>
+                    <div>
+                        <div>DELIVERY ADDRESS:</div>
+                        <p id="filled_address"></p>
+                    </div>
+                    <div>
+                        <div>DELIVERY METHOD:</div>
+                        <p>STANDRAD</p>
+                        <p>NO ADDITIONAL IMPORT CHARGES AT</p>
+                        <p>DELIVERY</p>
+                        <p>11-21 BUSINESS DAYS</p>
+                    </div>
+                </div>
+                <hr>
+                 <div id="payment_div">
+
+                 
+                <div>
+                    <div>2</div>
+                    <p>Payment</p>
+                </div>
+                <div>
+                    <input type="checkbox" checked />
+                    <label for="">My billing address is the same as my delivery address</label>
+                </div>
+                         
+                <div id="card_details">
+                    <input type="radio" checked>
+                    <label for="">Credit or Debit Card</label>
+                    <div>
+                        <img src="https://www.visa.co.jp/dam/VCOM/blogs/visa-blue-gradient-800x450.jpg" alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/2560px-Mastercard-logo.svg.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Card Number" id="card_number">
+                        <div>
+                            <input type="text" placeholder="MM / YY" id="expary">
+                            <input type="text" placeholder="Security Code" id="security_code">
+                        </div>
+                    </form>
+                </div>
+                <hr>
+
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="">Send me electronics or mail offers from Borderfree. You may opt out at any time.</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="">Send me electronics or mail offers from Borderfree. You may opt out at any time.</label>
+
+                </div>
+
+                <div>
+                    <button id="place_order_btn" onclick="gotoSucessPage()">Place Order</button>
+                </div>
+
+                <div>
+                    This order total is 100% guranteed. There will be no additional charges due upon receipt.
+                </div>
+                </div>
+
+            </div>
+            <!-- payment end -->
+
+        </div>
+        <div id="checkout_div">
+            <div id="checkout_maindiv">
+               <div>
+                   <div><i class="fas fa-shopping-cart"></i></div>
+                   <p>Your Order</p>
+               </div>
+               <div>
+                   <button onclick="goTopayment()">Continue</button>
+               </div>
+               <div id="lists">
+                   <ul>
+                       <li>Items</li>
+                       <li>Shipping</li>
+                       <li>Duties & Taxes</li>
+                   </ul>
+                   <ul>
+                       <li id="item_value">$0</li>
+                       <li id="shipping">$50</li>
+                       <li id="External">$100</li>
+                   </ul>
+               </div>
+               <div>
+                   <p>TOTAL</p>
+                   <p id="final_total">$0</p>
+               </div>
+               <hr>
+               
+               <Div id="promo_code">
+                <p >Promro Code</p>
+                <div>
+                   <input type="text" name="Promo code" placeholder="Enter Promo code" id="promo_input">
+                   <button id="prmo_apply" onclick="checkPromo()">Apply</button>
+                   
+                </div>
+                <div id="coupon_applied_sucess">Coupon applied sucessfully</div>
+                   <div id="coupon_not_applied">You did not apply any code</div>
+                   <div id="invalid_coupon">Invalid promocode</div>
+               </Div>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+<script src="./Checkout.js"></script>
+</html>

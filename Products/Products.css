@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Nunito+Sans:wght@700&family=Poppins:wght@200;300;500&family=Roboto+Mono&family=Roboto:wght@700&family=Source+Sans+Pro&display=swap');
+
+#main_div{
+    
+        width: 96.8%;
+        margin: auto;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-gap: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        /* justify-content: space-between; */
+        height: auto;
+    
+}
+
+/* Left filter div */
+#filter_div{
+    border: 1px solid rgb(172, 170, 170);
+    width: 100%;
+    padding-left: 4px;
+    height: 110vh;
+    /* position: fixed; */
+    margin-top: 50px;
+}
+#filter_div > div > p{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+
+#filter_div > div >div>form{
+    padding: 8px 14px;
+}
+
+input.largerCheckbox{
+    width: 40px;
+    height: 20px;
+}
+label{
+    font-size: 20px;
+}
+
+input, label{
+    margin: 8px 0px;
+}
+
+/* Product Div */
+/* #product_div{
+    border: 1px solid black;
+} */
+#product_div > p {
+     font-size: 55px;
+     font-weight: 600;
+     text-align: center;
+     margin-top: 50px;
+     letter-spacing: 6px;
+}
+/* Price Filter */
+
+#Price_filter{
+    margin-left: 80%;
+    margin-top: 15px;
+}
+#Price_filter > form > select{
+    width: 250px;
+    height: 30px;
+    font-size: 17px;
+    color: #9E9E9E;
+}
+/* Product Items */
+
+#items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: center;
+    grid-gap: 2%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#items > div > img {
+    width: 90%;
+    height: 450px;
+}
+#Title{
+    font-size: 20px;
+    color: #00695C;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#subtitle{
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin-top: 26px;
+}
+#price{
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 22px;
+}
+#rating{
+    font-size: 18px;
+    font-weight: 600;
+    color: #757575;
+    margin-top: 12px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Products.css">
+    <link rel="stylesheet" href="../Navbar/Navbar.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Products</title>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <main>
+       <div id="main_div">
+           <div id="filter_div">
+                <div>
+                    <p>Gende</p>
+                    <div>
+                        <form action="">
+                            <input type="checkbox" class="largerCheckbox" id="men" name="men" value="men" >
+                            <label for="men" >Men</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="women" name="women" value="women">
+                                <label for="women">Women</label><br>
+                                
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <p>Product Type</p>
+                    <div>
+                        <form action="">
+                            <input type="checkbox" class="largerCheckbox" id="shirts" name="shirts" value="shirts">
+                            <label for="shirts">shirts</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="pants" name="pants" value="pants">
+                                <label for="pants">pants</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="T-shirts" name="T-shirts" value="T-shirts">
+                            <label for="T-shirts">T-shirts</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="Kids" name="Kids" value="Kids">
+                                <label for="Kids">Kids</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="Beauties" name="Beauties" value="Beauties">
+                            <label for="Beauties">Beauties</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="Shoes" name="Shoes" value="Shoes">
+                                <label for="Shoes">Shoes</label><br>
+
+                                <input type="checkbox" class="largerCheckbox" id="Designer" name="Designer" value="Designer">
+                                <label for="Designer">Designer</label><br>
+                                
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <p>Ratings</p>
+                    <div>
+                        <form action="">
+                            <input type="checkbox" class="largerCheckbox" id="rating_1_2" name="rating_1-2" value="rating_1-2">
+                            <label for="rating_1_2">1-2</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="rating_2_3" narating_2-3e="rating_2-3" value="rating_2-3">
+                                <label for="rating_2_3">2-3</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="rating_3_4" name="rating_3-4" value="rating_3-4">
+                            <label for="rating_3_4">3-4</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="rating_4_5" name="rating_4-5" value="rating_4-5">
+                                <label for="rating_4_5">4-5</label><br>
+                                <input type="checkbox" class="largerCheckbox" id="rating_5" name="rating_5" value="rating_5">
+                            <label for="rating_5">5</label><br>
+                                
+                                
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <p>Price</p>
+                    <div>
+                        <form action="">
+                            <input type="checkbox" class="largerCheckbox" id="from0-250" name="0-250" value="0-250">
+                            <label for="from0-250">$0-$250</label><br>
+
+                                <input type="checkbox" class="largerCheckbox" id="from250-500" name="250-500" value="250-500">
+                                <label for="from250-500">$250-$500</label><br>
+
+                                <input type="checkbox" class="largerCheckbox" id="from500-1000" name="500-1000" value="500-1000">
+                            <label for="from500-1000">$500-$1000</label><br>
+
+                                <input type="checkbox" class="largerCheckbox" id="from1000-2000" name="1000-2000" value="1000-2000">
+                                <label for="from1000-2000">$1000-$2000</label><br>
+
+                                <input type="checkbox" class="largerCheckbox" id="from2000-4000" name="2000-4000" value="2000-4000">
+                            <label for="from2000-4000">$2000-$4000</label><br>
+
+                            <input type="checkbox" class="largerCheckbox" id="from4000-6000" name="4000-6000" value="4000-6000">
+                            <label for="from4000-6000">$4000-$6000</label><br>
+
+                            <input type="checkbox" class="largerCheckbox" id="above_6000" name="above_6000" value="above_6000">
+                            <label for="above_6000">above $6000</label><br>
+                                
+                                
+                        </form>
+                    </div>
+                </div>
+      
+
+           </div>
+           <div id="product_div">
+                 <p id="heading">Products</p>
+                 <div id="Item_div">
+                     <div id="Price_filter">
+                         <form action="">
+                             <select name="" id="sort_value">
+                                 <option value="">Sort by featured</option>
+                                 <option value="LH" onclick="sortLH()">Price low to high</option>
+                                 <option value="HL" onclick="sortHL()">Price high to low</option>
+                             </select>
+                         </form>
+                     </div>
+                     <div id="items">
+
+                     </div>
+
+                 </div>
+           </div>
+       </div>
+    </main>
+    <!-- <footer id="footer">
+
+    </footer> -->
+</body>
+<script type="module" src="./Products.js"></script>
+</html>
