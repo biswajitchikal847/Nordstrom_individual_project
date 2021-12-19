@@ -102,6 +102,9 @@ ul > li > i {
     font-weight: 200;
     color: #757575;
 }
+a{
+    color: black;
+}
 ul> li:first-child{
     margin-right: 8px;
 }

@@ -1,0 +1,53 @@
+.margin {
+    margin: auto;
+    width: 100%;
+  }
+  
+  #sliderContainer {
+    width: 92%;
+    margin: auto;
+  }
+  #sliderContainer i {
+    border: none;
+    background: transparent;
+    font-size: 50px;
+  }
+  #sliderContainer button {
+    margin-top: -47%;
+  }
+  
+  #carouselExampleControls {
+    height: fit-content;
+    width: 100%;
+  }
+ #carosoal_img>div> img {
+    height: 25%;
+  }
+  #prevButton {
+    margin-left: -150px;
+  }
+  #nextButton {
+    margin-right: -140px;
+  }
+  #carasol_btn {
+    border: none;
+  }
+  .cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cards > div {
+    width: 23%;
+    height: 100%;
+  }
+  .cards img {
+    width: 100%;
+  }
+  .cards p {
+    letter-spacing: 1px;
+  }
+  a{
+      color: black;
+  }
+

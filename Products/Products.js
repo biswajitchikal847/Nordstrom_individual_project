@@ -74,7 +74,10 @@ productdata.forEach((productItems)=>{
 }
 showProducts(productdata)
 
-// console.log(productdata)
+
+
+//  Price low to high & high to low
+
 function sortLH(){
   let arr = productdata.sort(function(a,b){
    return a.price - b.price
@@ -84,6 +87,8 @@ function sortLH(){
   // sortLH()
   
 }
+
+
 
 // console.log(sortLH())
   console.log(productdata)
@@ -95,15 +100,19 @@ function sortLH(){
   showProducts(arr)
 }
 
-// let sort_value = document.getElementById("sort_value").value;
-// console.log(sort_value)
+document.getElementById('sort_value').addEventListener('change', function() {
+    if(this.value == "Price low to high"){
+        sortLH();
+        // console.log("yes")
+    }else if(this.value == "Price high to low"){
+          sortHL();
+        //   console.log("no")
+    }else if (this.value == "Sort by featured"){
+        showProducts(productdata);
+    }
+  });
 
-// // let HL = document.getElementById("HL").value;
-// // let LH = document.getElementById("LH").value;
-
-// LH.onclick = sortLH
-// HL.onclick = sortHL
-
+//   end
 
 // Filter
 

@@ -98,6 +98,18 @@ function editAddress(){
     Payment.style.display = "none"
 }
 
+let ok = document.getElementById("ok");
+let coupon_div = document.getElementById("coupon_div");
+
+setTimeout(()=>{
+   coupon_div.style.display = "flex"
+},3000);
+
+ok.onclick = function(){
+    
+    coupon_div.style.display="none";
+}
+
 function gotoSucessPage(){
     let card_number = document.getElementById("card_number").value;
     let expary = document.getElementById("expary").value;

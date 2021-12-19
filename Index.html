@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="./Footer/footer.css">
     <link rel="stylesheet" href="./Navbar/Navbar.css">
     <title>Index</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+      <link rel="stylesheet" href="./slider.css">
 </head>
 
 <body>
@@ -89,13 +111,55 @@
         <!-- Product Div -->
         <div>
             <p>Great deals on what you love</p>
-            <div id="product_main_div">
-
             </div>
-        </div>
+            <!-- <div id="product_main_div"> -->
+                <div id="sliderContainer">
+                    <div
+                      id="carouselExampleControls"
+                      class="carousel slide margin smallFont"
+                      data-interval="false"
+                    >
+                      <div class="carousel-item active">
+                        <div class="w-100 cards" id="carosoal_main_div1">
+                         
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="w-100 cards" id="carosoal_main_div2">
+                         
+                        </div>
+                      </div>
+              
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleControls"
+                        role="button"
+                        data-slide="prev"
+                      >
+                        <button aria-hidden="true" id="carasol_btn">
+                            <i class="fas fa-chevron-left"></i>
+                            
+                        </button>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselExampleControls"
+                        role="button"
+                        data-slide="next"
+                      >
+                        <button aria-hidden="true" id="carasol_btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+            <!-- </div>
+        </div> -->
 
         <!-- End product div -->
-        <div>
+        <div id="line_img">
             <img src="https://n.nordstrommedia.com/id/bc24cc31-b195-42a3-9acc-3d5cf0103301.png?h=15&w=1608" alt="">
         </div>
 

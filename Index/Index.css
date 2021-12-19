@@ -132,6 +132,9 @@ width: 100%;
     width: 100%;
     
 }
+#line_img > img {
+    width: 100%;
+}
 
 /* 8th slider */
 
@@ -150,21 +153,21 @@ width: 100%;
 
 #product_main_div{
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 19%);
     justify-content: center;
     grid-gap: 1%;
-    overflow: auto;
+    overflow: auto; */
     margin-top: 20px;
 }
-#product_main_div > div {
+/* #product_main_div > div {
     width: 300px;
     margin-left: 10px;
 }
 #product_main_div > div > img {
     width: 90%;
     height: 350px;
-}
+} */
 #Title{
     font-size: 20px;
     color: #00695C;

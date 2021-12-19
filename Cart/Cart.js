@@ -17,6 +17,11 @@ console.log(bag_item)
 let bag_items = document.getElementById("bag_items");
 bag_items.innerHTML = bag_item;
 
+let bag = document.getElementById("bag");
+bag.onclick = function(){
+  window.location.href = "../Cart/Cart.html"
+}
+
 // console.log(cart);
 // console.log(size)
 var subtotal = 0;
@@ -190,10 +195,11 @@ function removetoCart(e, prod) {
 
   let Shopping_bag = document.getElementById("Shopping_bag");
 Shopping_bag.innerHTML = "Shopping Bag " +"( " + cart.length + " )"
+let no_of_item = localStorage.setItem("no_of_item",cart.length);
 }
 
 console.log(cart.length, "cartlen")
-let no_of_item = localStorage.setItem("no_of_item",cart.length);
+// let no_of_item = localStorage.setItem("no_of_item",cart.length);
 
 
 showProducts();

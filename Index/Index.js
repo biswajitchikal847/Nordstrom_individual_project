@@ -13,6 +13,7 @@ let do_sign_in = document.getElementById("do_sign_in");
 do_sign_in.onclick = function(){
     window.location.href = "../createAccount/login.html"
 }
+
 // console.log(firstSliderImg)
 // console.log(images[0])
 
@@ -160,11 +161,11 @@ bag_items.innerHTML = bag_item;
 
 //  show products
 
-let product_main_div = document.getElementById("product_main_div");
+let carosoal_main_div1 = document.getElementById("carosoal_main_div1");
 
 
     function showProducts(productData){
-        for(let i = 0; i < 5; i++){
+        for(let i = 40; i < 45; i++){
         let div = document.createElement("div");
 
         let image = document.createElement("img");
@@ -212,11 +213,69 @@ let product_main_div = document.getElementById("product_main_div");
                   window.location.href = "../ProductDetails/Prod_details.html";
 
               }
-              product_main_div.append(div)
+              carosoal_main_div1.append(div)
     }
     }
 
 
 showProducts(productdata);
+
+let carosoal_main_div2 = document.getElementById("carosoal_main_div2");
+
+function showNextProducts(productData){
+    for(let i = 29; i < 34; i++){
+    let div = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.src = productdata[i].Displayimages;
+
+    let Titel = document.createElement("p");
+    Titel.innerHTML = productdata[i].Title
+    Titel.id = "Title"
+
+    let subtitle = document.createElement("p");
+    subtitle.innerHTML = productdata[i].subTitle
+    subtitle.id = "subtitle"
+
+    let price = document.createElement("P");
+    price.innerHTML = "$ "+ productdata[i].price
+    price.id ="price"
+
+    let rating = document.createElement("p");
+    rating.innerHTML = "Rating "+ productdata[i].Rating
+    rating.id = "rating"
+
+    image.onmouseover = function (){
+      image.src = productdata[i].image1;
+    }
+
+    image.onmouseout = function (){
+      image.src = productdata[i].Displayimages;
+    }
+
+    div.append(image,Titel,subtitle,price,rating);
+    div.onclick = function()
+          {
+              if(localStorage.getItem("pdetails")===null)
+              {
+                  localStorage.setItem("pdetails",JSON.stringify([]));
+              }
+              
+              let pdetails = JSON.parse(localStorage.getItem("pdetails"));
+              
+              pdetails.pop()
+              pdetails.push(productdata[i]);
+
+              localStorage.setItem("pdetails",JSON.stringify (pdetails));
+              
+              window.location.href = "../ProductDetails/Prod_details.html";
+
+          }
+          carosoal_main_div2.append(div)
+}
+}
+
+
+showNextProducts(productdata);
 
 
