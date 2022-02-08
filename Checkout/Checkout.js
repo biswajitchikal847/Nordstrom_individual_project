@@ -103,7 +103,7 @@ let coupon_div = document.getElementById("coupon_div");
 
 setTimeout(()=>{
    coupon_div.style.display = "flex"
-},3000);
+},6000);
 
 ok.onclick = function(){
     
@@ -121,3 +121,5 @@ function gotoSucessPage(){
     }
 
 }
+
+
