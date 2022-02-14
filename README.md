@@ -40,9 +40,9 @@ This is the clone of Nordstrom.com,This Is Ecommerce Webisite i Developed this W
 
   
 * Login Page/SignUp Page
-  <img src="https://determined-meninsky-76dd0a.netlify.app/images/Screenshot%20(246).png" alt="accessibility text" width="500px">
-    <!-- login -->
- <img src="https://determined-meninsky-76dd0a.netlify.app/images/Screenshot%20(246).png" alt="accessibility text" width="500px">
+  <img src="https://determined-meninsky-76dd0a.netlify.app/images/Screenshot%20(246).png" >
+   
+ <img src="https://determined-meninsky-76dd0a.netlify.app/images/Screenshot%20(247).png" >
 
 * Products Page
   <img src="https://determined-meninsky-76dd0a.netlify.app/images/Screenshot%20(239).png">
